@@ -1,0 +1,80 @@
+:root { 
+    --Background: #001894;
+    --Branco: #fff;
+    --Cinza: #a3a3a3;
+    --Fonte: 'Titillium Web';
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: var(--Background);
+    color: var(--Branco);
+    font-family: var(--Fonte);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.Primario {
+    background-image: linear-gradient(to right, #001894, #001cae, #0032c9, #004de3, #0065fd  );
+    background-repeat: no-repeat;
+    align-items: center;
+    text-align: center;
+}
+
+.Container { 
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.Container_Button {
+    background-color: #4457c5;
+    border-radius: 4px;
+    padding: 0.65em;
+    color: var(--Branco);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 0.5em;
+}
+
+.Container_Botton2 {
+    background-color: transparent;
+    border: 2px solid var(--Branco);
+}
+
+.Container_IMG {
+    width: 65%;
+}
+
+.Container_Aviso {
+    font-size: 12px;
+    color: var(--Cinza);
+}
+
+.Container_Titulo {
+    font-size: 35px;
+    font-weight: 300;
+}
+
+.Container_Caixa {
+    margin: 0 6em;
+}
+
+@media screen and (max-width: 768px) {
+    .Container {
+        display: block;
+        background-image: none;
+    }
+
+    .Container_IMG {
+        width: 50vw;
+    }
+    
+    .Container_Caixa {
+        margin: 2em 2em;
+    }
+}
